@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/normalice.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,39 +19,53 @@
 
             <img src="../img/logo.png" alt="logo3D" href="index.html" class="logo-imagen">
             
-            <div class="buscador">
 
-                <input type="text" class="boton-buscar" >
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search lupa" width="28" height="28" viewBox="0 0 24 24" stroke-width="3" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <circle cx="10" cy="10" r="7" />
-                    <line x1="21" y1="21" x2="15" y2="15" />
-                </svg>
-
-            </div>
-
-            <div class="nav">
+            <div class="nav__principal">
                 <a href="../index.html" class="color-naranja nav__item">Home</a>
                 <a href="../pages/productos.html" class="color-turqueza nav__item">Productos</a>
                 <a href="../pages/contacto.html" class="color-negro nav__item">Contacto</a>
-                <a href="..//pages/registro.html" class="color-rojo nav__item">Ingresar</a>
+                <a href="../pages/registro.html" class="color-rojo nav__item">Ingresar</a>
             </div>
         </div>
     </header>
-
+    
     <h1 class="centrar-titulo color-turqueza">Productos</h1>
     
-            <nav class="nav-productos">
-                <a href="#" class="color-negro nav__productos__item">Filamentos</a>
-                <a href="#" class="color-negro">Resinas</a>
-                <a href="#" class="color-negro">Extrusores</a>
-                <a href="#" class="color-negro">Impresoras</a>
-                <a href="#" class="color-negro">Coolers</a>
-                <a href="#" class="color-negro">Motores</a>
-                <a href="#" class="color-negro">Destacados</a>
-            </nav>
+            <div class="container-xl mt-5">
 
+                <ul class="nav justify-content-center">
+
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" aria-current="page" href="#">Filamentos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="#">Resinas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="#">Extrusores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Impresoras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Coolers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Motores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Destacados</a>
+                    </li>
+                </ul>
+
+                
+                <form class="d-flex justify-content-center mt-5" role="search">
+                    <input class="form-control me-2 buscar__producto border-0 bg-secondary bg-opacity-10 rounded-pill" type="search" placeholder="" aria-label="Search">
+                    <button class="btn btn-outline-warning rounded-pill buscar__producto__boton" type="submit">Buscar</button>
+                </form>
+                
+            </div>
+           
             <div class="opcion-producto">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-point" width="36" height="36" viewBox="0 0 24 24" stroke-width="3" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -71,7 +87,8 @@
                         
                     <img src="../img/filamentos.png" alt="filamentos" class="producto-imagen">
 
-                    <div class="producto-info">
+                    <div>
+
                         <p class="productos-texto">
                             Filamento 3D PLA Printalot
                         </p>
@@ -89,7 +106,7 @@
                         
                     <img src="../img/resina.png" alt="resina" class="producto-imagen">
 
-                    <div class="producto-info">
+                    <div>
 
                         <p class="productos-texto">
                             Resina Hellbot Dura Estandar 405nm x 250ml.
@@ -109,7 +126,7 @@
                         
                     <img src="../img/extrusor.png" alt="extrusor" class="producto-imagen">
                         
-                    <div class="producto-info">
+                    <div>
 
                         <p class="productos-texto">
                             Kit Extrusor Doble Traccion Metalico Ender 3 Cr10.
@@ -129,7 +146,7 @@
                         
                     <img src="../img/Pantalla.png" alt="pantalla" class="producto-imagen">
                         
-                    <div class="producto-info">
+                    <div>
 
                         <p class="productos-texto">
                             Modulo Pantalla Control Para Arduino Ramps 1 4 Display. 
@@ -149,7 +166,7 @@
                         
                     <img src="../img/motor.png" alt="motor" class="producto-imagen">
                         
-                    <div class="producto-info">
+                    <div>
 
                         <p class="productos-texto">
                             Nema 17 Motor Paso A Paso 1.8 Alto Torque 1.7a. 
@@ -169,7 +186,7 @@
                         
                     <img src="../img/correa.png" alt="correa" class="producto-imagen">
                         
-                    <div class="producto-info">
+                    <div>
 
                         <p class="productos-texto">
                             Correa Cerrada Gt2 150 Dientes 300mm. 
@@ -189,7 +206,7 @@
                         
                     <img src="../img/placa.png" alt="placa" class="producto-imagen">
                         
-                    <div class="producto-info">
+                    <div>
 
                         <p class="productos-texto">
                             Creality Ender 3 V2 Upgrades V4.2.7 
@@ -209,7 +226,7 @@
                         
                     <img src="../img/cooler.png" alt="cooler" class="producto-imagen">
                         
-                    <div class="producto-info">
+                    <div>
 
                         <p class="productos-texto">
                             Cooler Turbina Fan Impresora 3d Cooler 24v 
@@ -229,7 +246,7 @@
                         
                     <img src="../img/cama.png" alt="cama" class="producto-imagen">
                         
-                    <div class="producto-info">
+                    <div>
 
                         <p class="productos-texto">
                             Cama Magnetica - 310x310mm 
@@ -249,7 +266,7 @@
                         
                     <img src="../img/maquina1.png" alt="maquina1" class="producto-imagen">
                         
-                    <div class="producto-info">
+                    <div>
 
                         <p class="productos-texto">
                             Creality Halot One
@@ -269,7 +286,7 @@
                         
                     <img src="../img/maquina4.png" alt="maquina4" class="producto-imagen">
                         
-                    <div class="producto-info">
+                    <div>
 
                         <p class="productos-texto">
                             Wanhag Duplicator.
@@ -289,7 +306,7 @@
                         
                     <img src="../img/vaso.png" alt="vaso" class="producto-imagen">
                         
-                    <div class="producto-info">
+                    <div>
 
                         <p class="productos-texto">
                             Vaso Polimero mate.
@@ -329,8 +346,8 @@
                 </div>
 
             <div class="printalot">
-                <img src="../Img/printalot.png" alt="printalot-logo">
-                <img src="../Img/printalot2.png" alt="printalot-letra">
+                <img src="../img/printalot.png" alt="printalot-logo">
+                <img src="../img/printalot2.png" alt="printalot-letra">
             </div>    
 
         </div>
@@ -342,9 +359,9 @@
 
             <div class="encabezado">
 
-                <img src="../Img/logo.png" alt="logo3D" href="index.html">
+                <img src="../img/logo.png" class="logo-imagen" alt="logo3D" href="index.html">
                 
-                <div class="nav">
+                <div class="nav__principal">
                     <a href="../index.html" class="color-naranja nav__item">Home</a>
                     <a href="productos.html" class="color-turqueza nav__item">Productos</a>
                     <a href="contacto.html" class="color-negro nav__item">Contacto</a>
@@ -360,7 +377,7 @@
                         Lorem Ipsum has been the industry's standard dummy 
                         text ever since the 1500s. 
                     </p>
-                    <img src="../Img/redes.png" alt="redes" class="footer-imagen">
+                    <img src="../img/redes.png" alt="redes" class="footer-imagen">
                 </div>
 
                 <div class="footer-separacion">
@@ -388,8 +405,8 @@
 
         
     </footer>
-        
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 
 </body>
 </html>

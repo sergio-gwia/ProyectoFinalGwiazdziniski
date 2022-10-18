@@ -697,4 +697,6 @@ video {
     .nav-productos{
         grid-template-columns: repeat(3, 1fr);
     }
+    .creality-background{
+        height: 400px;
 }

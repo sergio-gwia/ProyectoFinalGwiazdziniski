@@ -1,0 +1,21 @@
+
+@mixin flex-colums {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin gridtemplate ($valor1, $valor2) {
+    display: grid;
+    grid-template-rows: ($valor1, $valor2);
+}
+
+@mixin alto-ancho ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

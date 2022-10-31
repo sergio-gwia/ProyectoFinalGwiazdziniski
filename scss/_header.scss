@@ -1,0 +1,21 @@
+.encabezado {
+    @include flex-colums;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+
+        .logo__imagen{
+            width: 15rem;
+        }
+
+        .nav__principal {
+            @include flex-colums;
+            align-items: center;
+            width: 380px;
+            gap: 20px;
+
+                .nav__item:hover {
+                    transform: scale(1.4);
+                }
+        }
+}

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/normalice.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,63 +16,71 @@
     <header>
         <div class="encabezado">
 
-            <img src="../img/logo.png" alt="logo3D" href="index.html" class="logo-imagen">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo3D" href="index.html" class="logo__imagen"></a> 
+  
 
             <div class="nav__principal">
-                <a href="../index.html" class="color-naranja nav__item">Home</a>
-                <a href="../pages/productos.html" class="color-turqueza nav__item">Productos</a>
-                <a href="../pages/contacto.html" class="color-negro nav__item">Contacto</a>
-                <a href="..//pages/registro.html" class="color-rojo nav__item">Ingresar</a>
+                <a href="../index.html" class="color__naranja nav__item">Home</a>
+                <a href="../pages/productos.html" class="color__turqueza nav__item">Productos</a>
+                <a href="../pages/contacto.html" class="color__negro nav__item">Contacto</a>
+                <a href="..//pages/registro.html" class="color__rojo nav__item">Ingresar</a>
             </div>
         </div>
     </header>
 
-    <h1 class="centrar-titulo color-naranja">Creality Halot One</h1>
+    <h1 class="centrar__titulo color__naranja">Creality Halot One</h1>
 
     <main>
 
-        <div class="container">
+        <div class="contenedor">
 
             <div class="creality__titulo">
-                <h2 class="color-rojo">¿Filamento o Resina?</h2>
-                <h2 class="color-rojo">esa es la cuestion...</h2>
+                <h2 class="color__rojo">¿Filamento o Resina?</h2>
+                <h2 class="color__rojo">esa es la cuestion...</h2>
             </div>
 
-            <div class="creality-grid">
+            <div class="creality__grid">
 
-                <div class="creality-info">
+                <div class="creality__info">
 
-                    <p class="creality-texto">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 
-                        1500s, when an unknown printer took a galley of type and scrambled it to 
-                        make a type specimen book. It has survived not only five centuries, but 
-                        also the leap into electronic typesetting, remaining essentially unchanged. 
-                        It was popularised in the 1960s with the release of Letraset sheets 
-                        containing Lorem Ipsum passages, and more recently with desktop publishing 
-                        software like Aldus PageMaker including versions of Lorem.
+                    <p class="creality__texto">
+                        De la misma manera que al escoger una impresora tradicional escogemos cuál es el sistema 
+                        de impresión, en una 3D ocurre lo mismo, pero en referente al material base utilizado. 
+                        Lo que al mismo tiempo hace que el funcionamiento entre estos dos tipos de impresoras 
+                        3D sea diferente entre sí. Por lo que la elección del usuario dependerá de la naturaleza 
+                        del material que haya escogido.En el caso de las impresoras 3D FDM, su forma de funcionar 
+                        es usar un filamento de plástico. El cual se funde por un mecanismo idéntico al de una 
+                        pistola de cola y abocado por una superficie sobre la que esta se enfría. El objeto se 
+                        construye capa por capa que se va solidificando. El trabajo del resto de la impresora 3D 
+                        es dirigir la pistola por la superficie de manera ordenada para que la figura salga como 
+                        nos esperamos.
                     </p>
     
-                    <p class="creality-texto">
-                        It is a long established fact that a reader will be distracted by the 
-                        readable content of a page when looking at its layout. The point of using 
-                        Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
-                        as opposed to using 'Content here, content here', making it look like 
-                        readable English. Many desktop publishing packages and web page editors 
-                        now use Lorem Ipsum as their default model text, and a search!
+                    <p class="creality__texto">
+                        En cambio, las impresoras 3D del SLA hacen uso de resinas que pueden venir tanto en polvo como 
+                        líquidas. La manera de imprimir es por capas, pero para endurecer y compactar el objeto es 
+                        necesario usar una luz ultraviolada. Este es uno de los motivos, junto a los gases nocivos 
+                        por los cuales este tipo de impresoras están erradas. Con tal de conseguir dicha luz se 
+                        utiliza un tipo de láser. Por lo que su funcionamiento es distinto. Aquí no tenemos un objeto 
+                        que caliente al material, sino que la resina se aboca sobre la superficie para que luego el 
+                        láser dibuje cada capa.
                     </p>
            
 
                 </div>
 
+                <div class="creality__area">
+
+                    <img src="../img/creality2.png" alt="creality1" class="creality__img">
+                    <img src="../img/creality3.jpg" alt="creality1" class="creality__img">
+
+                </div>
                 
-                <img src="../img/creality2.png" alt="creality1" class="impresora-img">
+                <img src="../img/creality1.png" alt="creality2" class="creality__img">
 
-                <img src="../img/creality1.png" alt="creality2" class="impresora-img">
+                <div class="creality__info">
 
-                <div class="creality-info">
-
-                    <h2 class="color-turqueza">Espacificaciones</h2>
+                    <h2 class="color__turqueza centrar__titulo">Espacificaciones</h2>
 
                     <ul>
                         <li>Print size: 127 x 80 x 160 mm</li>
@@ -85,14 +92,12 @@
                         <li>OTA online upgrade</li>
                     </ul>
 
-                    <p class="creality-texto">
-                        It is a long established fact that a reader will be distracted 
-                        by the readable content of a page when looking at its layout. 
-                        The point of using Lorem Ipsum is that it has a more-or-less normal 
-                        distribution of letters, as opposed to using 'Content here, content here', 
-                        making it look like readable English. Many desktop publishing packages
-                         and web page editors now use Lorem Ipsum as their default model text, 
-                         and a search!
+                    <p class="creality__texto">
+                        Fuente de luz integral: HALOT-ONE es el sistema óptimo de fuente de luz integral de desarrollo 
+                        propio. Esta impresora 3D tiene un foco de 120 W y 6 lámparas, utiliza el principio de luz de 
+                        creflexión + refracción para hacer que cada dimensión sea con precisión constante, y la 
+                        uniformidad de la intensidad de la luz puede alcanzar más del 80%, el sistema de filtración de 
+                        aire de carbón activado puede eliminar fácilmente el olor.
                     </p>
 
                 </div>
@@ -104,48 +109,80 @@
 
     </main>
 
-    <div class="creality-background"></div>
+    <div class="creality__background"></div>
 
     <footer>
-        <div class="footer-fondo">
+        <div class="footer__fondo">
 
             <div class="encabezado">
 
-                <img src="../img/logo.png" class="logo-imagen" alt="logo3D" href="index.html">
+                <a href="../index.html"><img src="../img/logo.png" alt="logo3D" href="index.html" class="logo__imagen"></a>
                 
                 <div class="nav__principal">
-                    <a href="../index.html" class="color-naranja nav__item">Home</a>
-                    <a href="../pages/productos.html" class="color-turqueza nav__item">Productos</a>
-                    <a href="../pages/contacto.html" class="color-negro nav__item">Contacto</a>
-                    <a href="../pages/registro.html" class="color-rojo nav__item">Ingresar</a>
+                    <a href="../index.html" class="color__naranja nav__item">Home</a>
+                    <a href="../pages/productos.html" class="color__turqueza nav__item">Productos</a>
+                    <a href="../pages/contacto.html" class="color__negro nav__item">Contacto</a>
+                    <a href="../pages/registro.html" class="color__rojo nav__item">Ingresar</a>
                 </div>
 
             </div>
 
-            <div class="footer-grid">
+            <div class="footer__grid">
 
-                <div class="footer-info">
-                    <p class="footer-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy 
-                        text ever since the 1500s. 
-                    </p>
-                    <img src="../img/redes.png" alt="redes" class="footer-imagen">
+                <div class="footer__info">
+                    <p class="footer__texto">Queda prohibido copiar, reproducir, distribuir, publicar, transmitir, difundir, 
+                        o en cualquier modo explotar cualquier parte de este servicio sin la autorización previa de los 
+                        titulares correspondientes.
+                    </p>    
+                    
+                    <div class="footer__redes">
+
+                        <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                          </svg>
+                        </a>
+                          
+                        <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                          </svg>
+                        </a>
+                        
+                        <a href="https://web.whatsapp.com/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                            <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                          </svg>
+                        </a>
+                        
+                        <a href="https://www.youtube.com/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="3" y="5" width="18" height="14" rx="4" />
+                            <path d="M10 9l5 3l-5 3z" />
+                          </svg>
+                        </a>
+
+                    </div>
+                    
                 </div>
 
-                <div class="footer-separacion">
+                <div class="footer__separacion">
                     <p>Mi cuenta</p>
                     <a href="#">Resolucion de problemas</a>
                     <a href="#">Centro de Seguridad</a>
                 </div>
 
-                <div class="footer-separacion">
+                <div class="footer__separacion">
                     <p>Terms And Conditions</p>
                     <a href="#">Privacy Policy</a>
                     <a href="#">Cookie Policy</a>
 
                 </div>
 
-                <div class="footer-direccion">
+                <div class="footer__direccion">
                     <p>Direccion</p>
                     <p>Florencio Varela Buenos Aires,Argentina.CP 1888.</p>
                 </div>

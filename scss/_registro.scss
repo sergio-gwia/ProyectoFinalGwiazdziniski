@@ -1,0 +1,65 @@
+
+.contenedor__registro{
+    @include gridtemplate(500px, 500px);
+    justify-items: center;
+    margin-top: 30px;
+
+        .formulario__registro{
+            display: grid;
+            gap: 40px;
+            margin-top: 50px;
+
+                .registro__input {
+                    @include alto-ancho(30px, 200px);
+                    border: none;
+                    border-bottom: 1px solid $colorNegro;
+                    text-indent: 10px;
+                    outline: none;
+                }
+
+                .registro__boton{
+                    background-color: $colorTurqueza;
+                    @include alto-ancho(30px, 80px);
+                    @extend .boton__producto;
+                        &:hover {
+                            background-color: $colorTurqueza;
+                        }
+                        
+                }
+    }
+
+    .registro__redes{
+        display: grid;
+
+            .iniciar__facebook{
+                @include flex-row-center;
+                background-color: #3b5998;
+                color: $colorBlanco;
+                @include alto-ancho(40px, 260px);
+                border-radius: 30px;
+                transition: 0.5s;
+                    &:hover{
+                        transform: scale(1.2);cursor: pointer;
+                    }
+            }
+            
+           .iniciar__twitter {
+                @extend .iniciar__facebook;
+                background-color: #00ACEE;
+            }
+            
+           .iniciar__email {
+                @extend .iniciar__facebook;
+                background-color: red;
+            }
+    }
+
+}
+
+.creality {
+    margin: 50px 0;
+    background-image: url(../img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+    @include alto-ancho(400px, 100%);
+}

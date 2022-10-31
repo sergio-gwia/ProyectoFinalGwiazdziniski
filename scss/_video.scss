@@ -1,0 +1,35 @@
+.video {
+    position: relative;
+    margin-top: 1.5rem;
+
+        .overlay {
+            @include flex-row-center;
+            position: absolute;
+            @include alto-ancho(100%, 100%);
+            background: rgb(0,0,0);
+            background: linear-gradient(169deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 86%);
+
+                .video__contenido {
+                    @include flex-colums;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    
+                        .video__logo {
+                            width: 5rem;
+                        }
+                        
+                        .video__titulo {
+                            font-weight: bold;
+                            font-size: 17px;
+                        }
+                        
+                        .video__texto {
+                            font-size: small;
+                            width: 250px;
+                            text-align: center;
+                        }
+                    
+                }
+        }
+}

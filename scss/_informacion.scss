@@ -1,0 +1,44 @@
+.creality__titulo {
+    @include flex-colums;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.creality__grid {
+    margin-top: 70px;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    justify-items: center;
+
+        .creality__info {
+            @include flex-colums;
+            gap: 60px;
+            column-gap: 50px;
+
+                .creality__texto {
+                    width: 300px;
+                    line-height: 30px;
+                }
+        
+        }
+
+        .creality__area{
+            @include flex-colums;
+            justify-content: center;
+        }
+
+        .creality__img{
+            width: 300px;
+        }
+}
+
+.creality__background{
+    margin: 10px 0;
+    background-image: url(../img/crality3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+

@@ -1,0 +1,31 @@
+
+.impresora {
+    @include gridtemplate(300px, 400px);
+    @include alto-ancho(700px, auto);
+    align-content: center;
+    justify-items: center;
+    margin: 60px 0;
+    transition: 0.5s;
+    
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            transform: scale(1.1);
+            border-radius: 10px;
+        }
+
+                .impresora__info {
+                    @include flex-colums;
+                    align-items: center;
+                    gap: 10px;
+                    margin-top: 40px;
+
+                        .impresora__texto {
+                            width: 230px;
+                        }
+                }
+
+                .impresora__img {
+                    width: 400px;
+                }
+            
+}

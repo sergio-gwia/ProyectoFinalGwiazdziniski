@@ -1,0 +1,162 @@
+.grid {
+    display: grid;
+    justify-items: center;
+    margin-top: 30px;
+
+        .producto {
+            margin-top: 20px;
+
+                .productos__texto {
+                    width: 230px;
+                }
+                
+                .producto__info{
+                    @include flex-colums;
+                    gap: 20px;
+                }
+
+                .producto__imagen {
+                    max-width: 13rem;
+                }
+
+        }
+}
+
+.boton__producto {
+    background-color: $colorNaranja;
+    @include alto-ancho(30px, 70px);
+    font-family: $fuenteMontserrat;
+    font-size: small;
+    border-radius: 50px;
+    border: 0px;
+    color: $colorBlanco;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 00.5s;
+
+        &:hover {
+            transform: scale(1.3);
+            background-color: $colorNaranja;
+        }
+}
+
+.mas__productos{
+    @include flex-row-center;
+    padding: 70px 0;
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include alto-ancho(50px, 100%);
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    margin-bottom: 70px;
+
+        .tarjetas__imagen {
+            padding-top: 5px;
+            height: 5rem;
+        }
+    
+}
+
+.cura {
+    @include flex-colums;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+
+        .cura__imagen {
+            @include alto-ancho(10rem, 10rem);
+        }
+        
+        .boton__cura{
+            margin-top: 10px;
+            background-color: #4ABDAC;
+            @include alto-ancho(50px, 180px);
+            border-radius: 10px;
+            border: 0px;
+            color: #f5f5f5; 
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.5s;
+
+                &:hover{
+                    transform: scale(1.2);
+                }
+    }
+}
+
+$navegacion: (
+
+    home: $colorNaranja,
+
+    producto: $colorTurqueza,
+
+    contacto: $colorNegro,
+
+    ingresar: $colorRojo
+);
+
+@each $nav, $color in $navegacion {
+    .nav__item__#{$nav}:hover {
+        color: $color;
+    }
+
+}
+
+.nav-link { 
+    color: #666;display:inline-block; margin:0;
+
+        &::after{
+            display:block;
+            content: '';
+            border-bottom: solid 3px $colorNaranja;  
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+        }
+        &:hover::after{
+            transform: scaleX(1);
+        }
+        &.fromRight:after{ 
+            transform-origin:100% 50%; 
+        }
+        &.FronRight:after{  
+            transform-origin:  0% 50%; 
+        }
+}
+
+.buscar__producto{
+    @include alto-ancho(40px, 300px);
+}
+
+ .buscar__producto__boton:hover {
+    color: $colorBlanco;
+}
+
+.opcion__producto{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 85px;
+}
+
+.printalot {
+    @include flex-row-center;
+    background-image: url(../img/background2.webp);
+    background-size: cover;
+    height: 12rem;
+
+        .printalot__logo {
+            @include alto-ancho(150px, 150px);
+        }
+
+        .printalot__letra {
+            @include alto-ancho(180px, 200px);
+        }
+}

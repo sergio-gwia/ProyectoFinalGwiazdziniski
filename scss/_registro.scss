@@ -3,6 +3,7 @@
     @include gridtemplate(500px, 500px);
     justify-items: center;
     margin-top: 30px;
+    gap: 70px;
 
         .formulario__registro{
             display: grid;
@@ -30,7 +31,8 @@
 
     .registro__redes{
         display: grid;
-
+        height: 450px;
+        
             .iniciar__facebook{
                 @include flex-row-center;
                 background-color: #3b5998;

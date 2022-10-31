@@ -17,7 +17,6 @@
             justify-content: center;
             align-items: center;
             gap: 20px;
-            margin-top: 40px;
 
                 .contacto__imagen{
                     @include alto-ancho(70px, 250px);
@@ -36,7 +35,6 @@
 
 .contenedor__formulario{
     margin-top: 40px;
-    margin-right: 50px;
     @include flex-colums;
     align-items: center;
     background-color: $colorBlanco;
@@ -49,35 +47,36 @@
             gap: 20px;
         }
 
-            .formulario {
-                margin-top: 10px;
-                height: 400px;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
+        .formulario {
+            margin-top: 10px;
+            height: 400px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
 
-                        .formulario__input{
-                            height: 40px;
-                            max-width: 200px;
-                            text-indent: 10px;
-                        }
+                    .formulario__input{
+                        height: 40px;
+                        max-width: 200px;
+                        text-indent: 10px;
+                    }
+                    
+                    .formulario__area{
+                        grid-column: 1 / 3;
+                        text-indent: 10px;
+                        padding-top: 20px;
+                    }
+                    
+                    .formulario__boton{
+                        @include alto-ancho(30px, 70px);
+                        @extend .boton__producto;
                         
-                        .formulario__area{
-                            grid-column: 1 / 3;
-                            text-indent: 10px;
-                            padding-top: 20px;
-                        }
-                        
-                        .formulario__boton{
-                            @include alto-ancho(30px, 70px);
-                            @extend .boton__producto;
-                            
-                                &:hover {
-                                    transform: none;
-                                    background-color: $colorRojo;
-                                }
-                        }
-            }
+                            &:hover {
+                                transform: none;
+                                background-color: $colorRojo;
+                            }
+                    }
+        }
+            
 }
 
 .google__map{

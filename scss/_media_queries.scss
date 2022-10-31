@@ -21,7 +21,7 @@
                             
                             .video__titulo {
                                 font-weight: bold;
-                                font-size: 30px;
+                                font-size: 40px;
                             }
                             
                             .video__texto {
@@ -33,10 +33,14 @@
     }
 
     .impresora {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        align-items: flex-start;
-        height: 350px;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 400px;
+
+                .impresora__img {
+                    margin-top: 30px; 
+                    width: 450px;
+                }     
     }
 
     .grid {
@@ -49,15 +53,17 @@
     }
 
     .contenedor__contacto {
-        height: 600px;
+        padding-right: 70px;
         grid-template-columns: repeat(2, 1fr);
-
+        height: 650px;
+        
             .contenedor__formulario{
                 width: 450px;
             }
     }
 
     .contenedor__registro{
+        gap: 0;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 500px;
     }
@@ -100,7 +106,7 @@
                             }
                             
                             .video__titulo {
-                                font-size: 20px;
+                                font-size: 30px;
                             }
                             
                             .video__texto {
@@ -110,8 +116,22 @@
                             }
     }
 
+    .impresora .impresora__img {
+        width: 400px;
+    }
+
     .grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor__contacto {
+        justify-items: center;
+        align-content: center;
+    }
+
+    
+    .contenedor__formulario{
+        width: 450px;
     }
 
     .creality__background {

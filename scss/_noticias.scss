@@ -1,12 +1,12 @@
 
 .impresora {
-    @include gridtemplate(300px, 400px);
+    @include flex-colums;
     @include alto-ancho(700px, auto);
-    align-content: center;
-    justify-items: center;
+    align-items: center;
+    justify-content: center;
     margin: 60px 0;
     transition: 0.5s;
-    
+
         &:hover{
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
             transform: scale(1.1);
@@ -16,16 +16,18 @@
                 .impresora__info {
                     @include flex-colums;
                     align-items: center;
-                    gap: 10px;
-                    margin-top: 40px;
+                    gap: 30px;
+                    margin-top: 10px;
 
                         .impresora__texto {
-                            width: 230px;
+                            margin-top: 10px;
+                            width: 300px;
                         }
                 }
 
                 .impresora__img {
-                    width: 400px;
+                    margin-top: 10px;
+                    width: 300px;
                 }
             
 }

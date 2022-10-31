@@ -15,12 +15,12 @@ a {
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 2.5rem; }
+  font-size: 3rem; }
 
 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  font-size: 2rem; }
+  font-size: 2.2rem; }
 
 p {
   font-family: "Montserrat", sans-serif;
@@ -80,7 +80,7 @@ video {
 
 .video {
   position: relative;
-  margin-top: 1.5rem; }
+  margin: 1.5rem 0; }
   .video .overlay {
     display: flex;
     justify-content: center;
@@ -107,12 +107,12 @@ video {
         text-align: center; }
 
 .impresora {
-  display: grid;
-  grid-template-rows: 300px, 400px;
+  display: flex;
+  flex-direction: column;
   height: 700px;
   width: auto;
-  align-content: center;
-  justify-items: center;
+  align-items: center;
+  justify-content: center;
   margin: 60px 0;
   transition: 0.5s; }
   .impresora:hover {
@@ -123,12 +123,14 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    margin-top: 40px; }
+    gap: 30px;
+    margin-top: 10px; }
     .impresora .impresora__info .impresora__texto {
-      width: 230px; }
+      margin-top: 10px;
+      width: 300px; }
   .impresora .impresora__img {
-    width: 400px; }
+    margin-top: 10px;
+    width: 300px; }
 
 .grid {
   display: grid;
@@ -245,9 +247,9 @@ video {
 
 .opcion__producto {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  margin-left: 85px; }
+  margin-top: 30px; }
 
 .printalot {
   display: flex;
@@ -271,7 +273,7 @@ video {
     display: grid;
     grid-template-rows: 1fr; }
     .footer__fondo .footer__grid .footer__info {
-      padding-top: 10px;
+      padding-top: 12px;
       display: flex;
       flex-direction: column;
       align-items: center; }
@@ -315,8 +317,7 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    margin-top: 40px; }
+    gap: 20px; }
     .contenedor__contacto .contacto__info .contacto__imagen {
       height: 70px;
       width: 250px; }
@@ -332,7 +333,6 @@ video {
 
 .contenedor__formulario {
   margin-top: 40px;
-  margin-right: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -376,7 +376,8 @@ video {
   display: grid;
   grid-template-rows: 500px, 500px;
   justify-items: center;
-  margin-top: 30px; }
+  margin-top: 30px;
+  gap: 70px; }
   .contenedor__registro .formulario__registro {
     display: grid;
     gap: 40px;
@@ -395,7 +396,8 @@ video {
       .contenedor__registro .formulario__registro .registro__boton:hover {
         background-color: #4ABDAC; }
   .contenedor__registro .registro__redes {
-    display: grid; }
+    display: grid;
+    height: 450px; }
     .contenedor__registro .registro__redes .iniciar__facebook, .contenedor__registro .registro__redes .iniciar__twitter, .contenedor__registro .registro__redes .iniciar__email {
       display: flex;
       justify-content: center;
@@ -472,28 +474,32 @@ video {
       width: 230px; }
     .video .overlay .video__contenido .video__titulo {
       font-weight: bold;
-      font-size: 30px; }
+      font-size: 40px; }
     .video .overlay .video__contenido .video__texto {
       font-size: small;
       font-size: 20px;
       width: 300px;
       text-align: center; }
   .impresora {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    align-items: flex-start;
-    height: 350px; }
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px; }
+    .impresora .impresora__img {
+      margin-top: 30px;
+      width: 450px; }
   .grid {
     grid-template-columns: repeat(3, 1fr);
     padding-top: 20px; }
   .footer__grid {
     grid-template-columns: repeat(4, 1fr); }
   .contenedor__contacto {
-    height: 600px;
-    grid-template-columns: repeat(2, 1fr); }
+    padding-right: 70px;
+    grid-template-columns: repeat(2, 1fr);
+    height: 650px; }
     .contenedor__contacto .contenedor__formulario {
       width: 450px; }
   .contenedor__registro {
+    gap: 0;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 500px; }
   .creality__grid {
@@ -519,13 +525,20 @@ video {
     .video .overlay .video__contenido .video__logo {
       width: 8rem; }
     .video .overlay .video__contenido .video__titulo {
-      font-size: 20px; }
+      font-size: 30px; }
     .video .overlay .video__contenido .video__texto {
       font-size: 15px;
       width: 300px;
       text-align: center; }
+  .impresora .impresora__img {
+    width: 400px; }
   .grid {
     grid-template-columns: repeat(2, 1fr); }
+  .contenedor__contacto {
+    justify-items: center;
+    align-content: center; }
+  .contenedor__formulario {
+    width: 450px; }
   .creality__background {
     height: 450px; }
   .creality__grid .creality__info .creality__texto {

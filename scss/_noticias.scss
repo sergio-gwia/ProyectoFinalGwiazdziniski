@@ -7,12 +7,6 @@
     margin: 60px 0;
     transition: 0.5s;
 
-        &:hover{
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-            transform: scale(1.1);
-            border-radius: 10px;
-        }
-
                 .impresora__info {
                     @include flex-colums;
                     align-items: center;
@@ -21,7 +15,7 @@
 
                         .impresora__texto {
                             margin-top: 10px;
-                            width: 300px;
+                            width: 200px;
                         }
                 }
 

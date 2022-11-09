@@ -37,6 +37,16 @@
         justify-content: space-around;
         height: 400px;
 
+            &:hover{
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                transform: scale(1.1);
+                border-radius: 10px;
+            }
+
+            .impresora__info .impresora__texto {
+                    width: 300px;
+                }
+
                 .impresora__img {
                     margin-top: 30px; 
                     width: 450px;
@@ -46,6 +56,10 @@
     .grid {
         grid-template-columns: repeat(3, 1fr);
         padding-top: 20px;
+    }
+
+    .tarjetas .tarjetas__imagen {
+        height: 4rem;
     }
 
     .footer__grid {
@@ -58,7 +72,12 @@
         height: 650px;
         
             .contenedor__formulario{
-                width: 450px;
+                @include alto-ancho(550px, 450px);
+
+                    .formulario {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
             }
     }
 
@@ -106,7 +125,7 @@
                             }
                             
                             .video__titulo {
-                                font-size: 30px;
+                                font-size: 20px;
                             }
                             
                             .video__texto {
@@ -116,6 +135,9 @@
                             }
     }
 
+    .impresora .impresora__info .impresora__texto {
+        width: 300px;
+    }
     .impresora .impresora__img {
         width: 400px;
     }
@@ -131,9 +153,13 @@
 
     
     .contenedor__formulario{
-        width: 450px;
-    }
+        @include alto-ancho(550px, 450px);
 
+            .formulario {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+    }    
     .creality__background {
         height: 450px;
     }

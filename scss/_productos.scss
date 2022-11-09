@@ -56,7 +56,7 @@
 
         .tarjetas__imagen {
             padding-top: 5px;
-            height: 5rem;
+            height: 3rem;
         }
     
 }
@@ -73,6 +73,10 @@
 
         .cura__imagen {
             @include alto-ancho(10rem, 10rem);
+        }
+
+        .titulo__cura {
+            font-size: 20px;
         }
         
         .boton__cura{
@@ -150,13 +154,14 @@ $navegacion: (
     @include flex-row-center;
     background-image: url(../img/background2.webp);
     background-size: cover;
-    height: 12rem;
+    background-position: center;
+    height: 15rem;
 
         .printalot__logo {
             @include alto-ancho(150px, 150px);
         }
 
         .printalot__letra {
-            @include alto-ancho(180px, 200px);
+            @include alto-ancho(180px, 150px);
         }
 }

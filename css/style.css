@@ -97,10 +97,10 @@ video {
       align-items: center;
       gap: 10px; }
       .video .overlay .video__contenido .video__logo {
-        width: 5rem; }
+        width: 3rem; }
       .video .overlay .video__contenido .video__titulo {
         font-weight: bold;
-        font-size: 17px; }
+        font-size: 12px; }
       .video .overlay .video__contenido .video__texto {
         font-size: small;
         width: 250px;
@@ -115,10 +115,6 @@ video {
   justify-content: center;
   margin: 60px 0;
   transition: 0.5s; }
-  .impresora:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: scale(1.1);
-    border-radius: 10px; }
   .impresora .impresora__info {
     display: flex;
     flex-direction: column;
@@ -127,7 +123,7 @@ video {
     margin-top: 10px; }
     .impresora .impresora__info .impresora__texto {
       margin-top: 10px;
-      width: 300px; }
+      width: 200px; }
   .impresora .impresora__img {
     margin-top: 10px;
     width: 300px; }
@@ -180,7 +176,7 @@ video {
   margin-bottom: 70px; }
   .tarjetas .tarjetas__imagen {
     padding-top: 5px;
-    height: 5rem; }
+    height: 3rem; }
 
 .cura {
   display: flex;
@@ -195,6 +191,8 @@ video {
   .cura .cura__imagen {
     height: 10rem;
     width: 10rem; }
+  .cura .titulo__cura {
+    font-size: 20px; }
   .cura .boton__cura {
     margin-top: 10px;
     background-color: #4ABDAC;
@@ -257,13 +255,14 @@ video {
   align-items: center;
   background-image: url(../img/background2.webp);
   background-size: cover;
-  height: 12rem; }
+  background-position: center;
+  height: 15rem; }
   .printalot .printalot__logo {
     height: 150px;
     width: 150px; }
   .printalot .printalot__letra {
     height: 180px;
-    width: 200px; }
+    width: 150px; }
 
 .footer__fondo {
   background-color: #f5f5f5;
@@ -337,19 +336,21 @@ video {
   flex-direction: column;
   align-items: center;
   background-color: #ffff;
-  height: 550px;
+  height: 600px;
   width: 100%; }
   .contenedor__formulario .formulario__titulo {
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px; }
   .contenedor__formulario .formulario {
     margin-top: 10px;
     height: 400px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 10px; }
     .contenedor__formulario .formulario .formulario__input {
       height: 40px;
@@ -442,7 +443,7 @@ video {
     gap: 60px;
     column-gap: 50px; }
     .creality__grid .creality__info .creality__texto {
-      width: 300px;
+      width: 280px;
       line-height: 30px; }
   .creality__grid .creality__area {
     display: flex;
@@ -453,7 +454,7 @@ video {
 
 .creality__background {
   margin: 10px 0;
-  background-image: url(../img/crality3.jpg);
+  background-image: url(../img/creality4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -484,12 +485,20 @@ video {
     flex-direction: row;
     justify-content: space-around;
     height: 400px; }
+    .impresora:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transform: scale(1.1);
+      border-radius: 10px; }
+    .impresora .impresora__info .impresora__texto {
+      width: 300px; }
     .impresora .impresora__img {
       margin-top: 30px;
       width: 450px; }
   .grid {
     grid-template-columns: repeat(3, 1fr);
     padding-top: 20px; }
+  .tarjetas .tarjetas__imagen {
+    height: 4rem; }
   .footer__grid {
     grid-template-columns: repeat(4, 1fr); }
   .contenedor__contacto {
@@ -497,7 +506,11 @@ video {
     grid-template-columns: repeat(2, 1fr);
     height: 650px; }
     .contenedor__contacto .contenedor__formulario {
+      height: 550px;
       width: 450px; }
+      .contenedor__contacto .contenedor__formulario .formulario {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); }
   .contenedor__registro {
     gap: 0;
     grid-template-columns: repeat(2, 1fr);
@@ -525,11 +538,13 @@ video {
     .video .overlay .video__contenido .video__logo {
       width: 8rem; }
     .video .overlay .video__contenido .video__titulo {
-      font-size: 30px; }
+      font-size: 20px; }
     .video .overlay .video__contenido .video__texto {
       font-size: 15px;
       width: 300px;
       text-align: center; }
+  .impresora .impresora__info .impresora__texto {
+    width: 300px; }
   .impresora .impresora__img {
     width: 400px; }
   .grid {
@@ -538,7 +553,11 @@ video {
     justify-items: center;
     align-content: center; }
   .contenedor__formulario {
+    height: 550px;
     width: 450px; }
+    .contenedor__formulario .formulario {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
   .creality__background {
     height: 450px; }
   .creality__grid .creality__info .creality__texto {
